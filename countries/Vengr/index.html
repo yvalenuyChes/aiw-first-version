@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+<!-- 	<script src="../../jquery-3.4.1.js"></script> -->
+	<link rel="shortcut icon" href="../../logo1.ico" type="image/x-icon">
+	<script src="../../jquery-3.4.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Венгрия</title>
+</head>
+<body>
+	<div class="scene">
+		<div class="layer layer-bg" data-speed="10"></div>
+		<div class="layer layer-1"  data-speed="40"></div>
+		<div class="layer layer-2"  data-speed="80"></div>
+	</div>	
+
+	<div class="modal fade" id="Modal-bron" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+      	<h3>Бронирование</h3>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col ">
+      			<div class="inputBox">
+				<!-- <label class="labelText">Выбор транспорта</label> -->
+				<select size="1" name="" id="select">
+					 <option disabled>Выбор транспорта</option>
+					<option value="Самолет">Самолет</option>
+					<option value="Поезд">Поезд</option>
+					<option value="Пароход">Пароход</option>
+				</select>
+			</div>
+      		</div>
+      		<div class="col1">
+				<div class="inputBox">
+				<label class="labelText">Откуда</label>
+				<input class="input userInput" type="text" required>
+				</div>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Отбытие</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Возвращение</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько взрослых(18+)</label>
+				<input  class="input userInput" type="number" required>
+				</div>
+					
+				</div>
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько детей(0-17)</label>
+				<input class="input userInput" type="number">
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button data-dismiss="modal"  type="button" class="btn btn-primary btn-bron" data-toggle="modal" data-target="#exampleModalCenter">Подтвердить</button>
+				</div>
+			</div>
+      </div>
+  </div>
+</div>
+	</div>
+			<section class="container-fluid">
+		
+		<div class="row header">
+			<div class="col">
+				<h4>Венгрия</h4>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col" id="food">
+				<h3>Еда</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(kyhnya/3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Гуляш по венгерски</h2>
+					<p>Перекликается с гуляшом еще одно старинное венгерское блюдо пёркёльт (pörkölt). Тут надо быть каким-то особым гурманом с венгерскими корнями, чтобы отличить его от гуляша. В основе блюда лежит мелко порубленное мясо, которое обжаривается с луком, а потом посыпается сухой паприкой и тушитс</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kyhnya/1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Сосисочки</h2>
+					<p>Знакомиться с кулинарными традициями Венгрии нужно степенно, не имея впереди никаких неотложных дел – насытившись, вы не захотите думать об экскурсиях.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kyhnya/2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Венгерское лечо</h2>
+					<p>Готовится из помидоров, паприки, лука, копчёной свиной колбасы и подается с галушками.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+	
+	
+		<div class="row footer">
+			<div class="col" id="int-places">
+				<h3>Интересные места</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Озеро Балатон</h2>
+					<p>Озеро окутано легендами. Если верить одной из них, то на песчаном дне водоёма есть церковный алтарь, у которого из-за неразделённой любви постоянно плачет молодая девушка; и пока она плачет, озеро не пересохнет.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Озеро Хевиз</h2>
+					<p>На западе Венгрии в 5 километрах от города Кестхей находится самое большое европейское термальное озеро. Его вода насыщена минералами и обладает целебным эффектом. По этой причине вдоль берега Хевиза расположены десятки здравниц, специализирующихся на лечении ревматизма, артрита, артроза и других проблем с суставами.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Марципановый музей</h2>
+					<p>В 20 километрах от Будапешта в городе Сентендре находится музей марципана, посвящённый всем сладкоежкам. Все экспонаты музея изготовлены из марципана. Тут можно увидеть и здание парламента, и портрет Моцарта и многие другие произведения искусства, выполненные из необычного материала.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+			</div>
+		<div class="container-fluid last">
+			<div class="row">
+		<div class="col">
+			<a href="../../main.html"><img src="logo1.svg" alt="" id="last-img"></a>
+			<span><a href="" data-toggle="modal" data-target="#Modal-bron">Заказать билет</a></span>
+		</div>
+	</div>
+		</div>
+	
+	
+	
+	<script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="logo1.ico" type="image/x-icon">
+
+	 <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+	<link rel="stylesheet" href="anim blocks/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+	<script src="jquery-3.4.1.js"></script>
+	<script src="anim blocks/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<title>Alice in Wonderland</title>
+</head>
+
+<body>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<h2>Успешно</h2>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>Вы успешно заказали билет, подробности придут на почту</p>
+      </div>
+         <div class="modal-footer">
+         	<button data-dismiss="modal" type="button" class="btn btn-primary">Принять</button>
+         </div>
+  </div>
+</div>
+</div>
+	<div class="modal fade" id="Modal-bron" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+      	<h3>Бронирование</h3>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col ">
+      			<div class="inputBox">
+				<!-- <label class="labelText">Выбор транспорта</label> -->
+				<select size="1" name="" id="select">
+					 <option disabled>Выбор транспорта</option>
+					<option value="Самолет">Самолет</option>
+					<option value="Поезд">Поезд</option>
+					<option value="Пароход">Пароход</option>
+				</select>
+			</div>
+      		</div>
+      		<div class="col">
+				<div class="inputBox">
+				<label class="labelText">Откуда</label>
+				<input class="input userInput" type="text" required>
+				</div>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Отбытие</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Возвращение</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько взрослых(18+)</label>
+				<input  class="input userInput" type="number" required>
+				</div>
+					
+				</div>
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько детей(0-17)</label>
+				<input class="input userInput" type="number">
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button data-dismiss="modal"  type="button" class="btn btn-primary btn-bron" data-toggle="modal" data-target="#exampleModalCenter">Подтвердить</button>
+				</div>
+			</div>
+      </div>
+  </div>
+</div>
+	</div>
+	<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+			 				  <div class="modal-dialog" role="document">
+			 				    <div class="modal-content">
+									
+			 				    	<div class="modal-header">
+
+			 				    		<label for="tab-1" class="tab active1" title="Вкладка 1">Авторизация</label>
+				<label for="tab-2" class="tab" title="Вкладка 2">Регистрация</label>
+			 				    	</div>
+			 				    	<form class="tab-form active1">
+					<div class="inputBox">
+					<label class="labelText">Введите ваш e-mail</label>
+					<input class="input userInput" type="email" required>
+				</div>
+					<div class="inputBox">
+					<label class="labelText">Введите ваш пароль</label>
+					<input class="input userInput" type="password" required>
+					</div>
+
+					<input type= "submit" value="Войти" class="button"> 
+					<div class="modal-img">
+					<img src="SVG/logl2.svg" alt="">
+					</div>
+					<!--
+					<a href="#" class="button">Войти</a>
+				-->
+				
+					<div class="social_reg">
+					<a href="#">Я забыл(а) e-mail или пароль</a>
+					</div>
+				
+				</form>
+				<form class="tab-form">
+					<div class="inputBox">
+					<label class="labelText">Введите свое имя</label>
+					<input class="input userInput" type="text" required>
+				</div>
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+					<div class="inputBox">
+						<label class="labelText">Введите ваш пароль</label>
+						<input class="input userInput" class="tab" type="password" required>
+					</div>
+					<input type= "submit" value="Регистрация" class="button" required> 
+				
+					<!--
+					<a href="#" class="button">Регистрация</a>
+					-->
+					<div class="recover">
+						<input type="checkbox" id="ckbox" required>
+						
+						<label for="ckbox">Ознакомлен(а) и принимаю <a href="урк/pomogite.html">условия регистрации</a></label>
+						
+					</div>
+					<div class="modal-img">
+					<img src="SVG/logl2.svg" alt="">
+					</div>
+				</form>
+			 				   <!--    <div class="modal-header">
+			 				   	<h3 class="modal-title">Авторизия</h3>
+			 				   	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			 				            							 <span aria-hidden="true">&times;</span>
+			 				          								 </button>
+			 				   </div>
+			 				   								<div class="modal-body">
+			 				          								<form>
+			 				          									
+			 				          								</form>
+			 				        							 </div> -->
+			 				  </div>
+			 				</div>
+			 				</div>
+	
+	<section id="main">
+		<nav class="nav">
+			<div class="nav-img">
+			<img src="SVG/logo1.svg" alt="">
+			</div>
+			<div class="nav-a">
+				<!-- <a href="" data-scroll="main"><span>Авторизация</span></a> -->
+				<a href="" data-scroll="offers"><span>Наши предложения</span></a>
+				<a href="" data-scroll="why-we"><span>Почему мы</span></a>
+				<a href="" data-toggle="modal" data-target="#exampleModalCenter1">Авторизация</a>
+			 	<!-- <a href="">Заказ тура</a> -->
+			</div>
+		</nav>
+		
+		<div class="main-text">
+			<span>Мы покажем тебе удивительный мир! <br> За пределами стен есть то, что может тебя поразить</span>
+			<img src="SVG/kvadra1.svg" alt="">
+		</div>
+	<div class="scene">
+		<div data-speed="10" class="layer layer-bg"></div>
+	<!-- 	<div data-speed="30" class="layer layer-1"></div> -->
+		<div data-speed="30" class="layer layer-2"></div>
+	</div>
+
+	</section>
+	<section id="offers"  data-anchor="offers">
+		<div class="container">
+			<div class="row first-row">
+				<div class="col wow animate__fadeInLeft">
+					<button type="button" class="btn btn-info btn-1">Предложения</button>
+						
+				</div>
+				<div class="col col-offers wow animate__fadeInRight"><span>
+					Увидь то, что не увидишь из своего окна,<br>почувствуй солёные брызги водопада, сравни архитектуру запада и востока,<br>окунись в традиции незнакомых стран
+				</span></div>
+			</div>
+		 	<div class="row">
+			<div class="dws">
+			<div class="col blocImg wow animate__fadeInUp">
+		
+				 <img src="3x/nider.png" alt="">
+				 <div class="blocText">
+				 	<div class="text1 img-text">
+				 		<h2>Нидерланды</h2>
+				 		 
+				 		<span>Одна персона от 16 770 ₽</span>
+				 	</div>
+				 	 <div class="text2">
+				 	 <a href="" data-toggle="modal" data-target="#Modal-bron">	<button type="button" class="btn btn-primary btn-2">Заказать билет</button></a>
+				 	 	<a href="countries/Nider/index.html" target="_blank"> <button type="button" class="btn btn-primary btn-2">О стране</button></a>
+		               				 </div>
+		         			</div>
+		     			</div>
+		   				</div>
+			</div>
+				
+			
+			<div class="row" id="img-2">
+				
+				<div class="col  blocImg1 dws1 wow animate__fadeInLeft">
+					
+					<img src="3x/mal.png" alt="">
+					
+					<div class="blocText1">
+						<div class="text3 img-text">
+							<h2>Мальдивы</h2>
+						
+							<span>Одна персона от 24 782₽</span>
+						</div>
+						<div class="text4 img-text">
+							<a href="" data-toggle="modal" data-target="#Modal-bron"> <button type="button" class="btn btn-primary btn-3">Заказать билет</button></a>
+												 	 	<a href="countries/Mald/index.html" target="_blank"><button type="button" class="btn btn-primary btn-3">О стране</button> </a>
+						</div>
+					</div>
+				</div>
+				
+					<div class="col  blocImg2 dws2 wow animate__fadeInRight">
+					
+					<img src="3x/vengr.png" alt="">
+					
+					<div class="blocText2">
+						<div class="text5 img-text">
+							<h2>Венгрия</h2>
+						
+							<span>Одна персона от 14 235 ₽</span>
+						</div>
+						<div class="text6">
+							<a href="" data-toggle="modal" data-target="#Modal-bron"><button type="button" class="btn btn-primary btn-4">Заказать билет</button></a>
+							<a href="countries/Vengr/index.html" target="_blank"><button type="button" class="btn btn-primary btn-4">О стране</button> </a>
+				</div>
+				
+												 	 	
+												 	 	
+				
+			</div>
+		</div>
+	</div>
+			<div class="row" id="img-3">
+				<div class="col wow animate__fadeInUp">
+						<div class="dws3">
+				<div class="col blocImg3">
+			
+					 <img src="3x/mram.png" alt="CSS эффект">
+					 <div class="blocText3">
+					 	<div class="text7 img-text">
+					 		<h2>Мраморный каньон</h2>
+					 		
+					 		<span>Одна персона от: 5000₽ сутки</span>
+					 	</div>
+					 	 <div class="text8">
+					 	 	<a href="" data-toggle="modal" data-target="#Modal-bron"><button type="button" class="btn btn-primary btn-5">Заказать билет</button></a>
+					 	 	<a href="countries/mram/index.html" target="_blank"><button type="button" class="btn btn-primary btn-5">О каньоне</button></a>
+			               				 </div>
+			         			</div>
+			     			</div>
+			   				</div>
+				</div>
+			</div>
+			<div class="row" id="img-4">
+				<div class="col  blocImg4 dws4 wow animate__fadeInLeft">
+					
+					<img src="3x/nynew.png" alt="">
+					
+					<div class="blocText4">
+						<div class="text9 img-text">
+							<h2>Нью-Йорк</h2>
+							
+							<span>Одна персона от 33 712 ₽</span>
+						</div>
+						<div class="text10">
+							 <a href="" data-toggle="modal" data-target="#Modal-bron"><button type="button" class="btn btn-primary btn-6">Заказать билет</button></a>
+												 	 	<a href="countries/NY/index.html" target="_blank"><button type="button" class="btn btn-primary btn-6">О городе</button> </a>
+						</div>
+					</div>
+				</div>
+					
+				
+				<div class="col wow animate__fadeInRight">
+						<div class="col  blocImg5 dws5">
+					
+					<img src="3x/kanada.png" alt="">
+					
+					<div class="blocText5">
+						<div class="text11 img-text">
+							<h2>Канада</h2>
+							
+							<span>Одна персона от 59 521 ₽</span>
+						</div>
+						<div class="text12">
+							 <a href="" data-toggle="modal" data-target="#Modal-bron"><button type="button" class="btn btn-primary btn-7">Заказать билет</button></a>
+												 	 	<a href="countries/Kanada/index.html" target="_blank"><button type="button" class="btn btn-primary btn-7">О стране</button> </a>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+	</section>
+
+	<section id="why-we"  data-anchor="why-we" class="container">
+		<h2>Почему именно наша фирма?</h2>
+		
+			<div class="row">
+				<div class="col wow animate__fadeInLeft" id="why-we-first">
+					<div class="box-1 box-left">
+					<h3>Огромный выбор</h3>
+					<p>У нас есть много мест, <br> которые вы можете посетить</p>
+					
+
+					<img src="бек/SVG/9.svg" alt="">
+					</div>
+				</div>
+				<div class="col wow animate__fadeInRight" id="why-we-second">
+					<div class="box-1 box-right">
+					<h3>Надежность</h3>
+					<p>С нами Вы будете уверенны в <br> том, что прилетите куда надо</p>
+					
+
+					<img src="бек/SVG/10.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom ">
+				<div class="col wow animate__fadeInLeft" id="why-we-third">
+					<div class="box-1 box-left">
+					<h3>Работаем для Вас</h3>
+					<p>Поездка,отель,экскурсии <br> без переплат</p>
+					
+
+					<img src="бек/SVG/11.svg" alt="" id="why-we-img-three">
+					</div>
+				</div>
+				<div class="col wow animate__fadeInRight" id="why-we-fourth">
+					<div class="box-1 box-right">
+					<h3>Стабильность</h3>
+					<p>Наша фирма находится на рынке <br> уже не первый год</p>
+					
+					
+					<span id="ten-years">10 <br> ЛЕТ</span>
+					</div>
+				</div>
+			</div>
+	
+	</section>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col tooristam">
+				<h3>Туристам</h3>
+				<ul>
+					<li><a href="">Пользовательское соглашение</a></li>
+					<li><a href="">Правила покупки</a></li>
+					<li><a href="">Частые вопросы</a></li>
+					<li><a href="">Туры в рассроку</a></li>
+					<li><a href="">Страхование</a></li>
+					<li><a href="">Правила распостранения и <br> использования промокодов и/или <br> купонов</a></li>
+					<li><a href="">Соглашение о <br> конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="col companu">
+				
+				<ul id="ul-companu">
+					<li id="first-child-ul">О компании</li>
+					<li><a href="">Офисы продаж</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Отзывы о нас</a></li>
+					<li><a href="">Наши партнеры</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+				
+				<ol>
+					<li id="first-child">Скачайте наше приложение</li>
+					<li><img src="play market.png" alt="" id="play-market"> </li>
+				 	<li><img src="apple.png" alt="" id="apple-store"></li> 
+					
+				</ol>
+			</div>
+			<div class="col img-bottom">
+			<div class="footer-img">
+				<img src="бек/SVG/logl2.svg" alt="">
+				<div class="social">
+					<a href="https://vk.com/vladislav132"  target="_blank"><i class="fa fa-vk"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/yourfavoriteimp/?hl=ru"  target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+			</div>
+			<div class="footer-info">
+				<p><span>Alice in Wonderland</span>-туристическая компания,<br>которая сделает всё максимально быстро,<br>удобно и качественно!</p>
+				<p>Наш офис находится по адресу: Г.Санкт-Петербург, <br>
+				улица Бессовая, д.13 кв 8
+				</p>
+				<span>+7 911 911 11 11</span>
+				<br>
+				<span>+7 922 922 22 22</span>
+				<p>2019-2020©  Alice in Wonderland</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+
+	
+
+
+
+	
+	<script src="main.js"></script>
+	<script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="../../jquery-3.4.1.js"></script>
+	<link rel="shortcut icon" href="../../logo1.ico" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Мальдивы</title>
+</head>
+<body>
+	<div class="scene">
+		<div class="layer layer-bg" data-speed="10"></div>
+		<div class="layer layer-1"  data-speed="40"></div>
+		<div class="layer layer-2"  data-speed="80"></div>
+	</div>	
+	<div class="modal fade" id="Modal-bron" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+      	<h3>Бронирование</h3>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col ">
+      			<div class="inputBox">
+				<!-- <label class="labelText">Выбор транспорта</label> -->
+				<select size="1" name="" id="select">
+					 <option disabled>Выбор транспорта</option>
+					<option value="Самолет">Самолет</option>
+					<option value="Поезд">Поезд</option>
+					<option value="Пароход">Пароход</option>
+				</select>
+			</div>
+      		</div>
+      		<div class="col1">
+				<div class="inputBox">
+				<label class="labelText">Откуда</label>
+				<input class="input userInput" type="text" required>
+				</div>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Отбытие</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Возвращение</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько взрослых(18+)</label>
+				<input  class="input userInput" type="number" required>
+				</div>
+					
+				</div>
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько детей(0-17)</label>
+				<input class="input userInput" type="number">
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button data-dismiss="modal"  type="button" class="btn btn-primary btn-bron" data-toggle="modal" data-target="#exampleModalCenter">Подтвердить</button>
+				</div>
+			</div>
+      </div>
+  </div>
+</div>
+	</div>
+			<section class="container-fluid">
+		
+		<div class="row header">
+			<div class="col">
+				<h4>Мальдивы</h4>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<div class="col" id="food">
+				<h3>Еда</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(kuh/1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Завтрак</h2>
+					<p>Отдыхая на Мальдивах, вы наверняка встретите на завтраке в отеле блюдо «Mas huni». Что это такое и стоит ли попробовать? Большинство мальдивских блюд включает в себя рыбу и кокос. Мас Хуни – это традиционный завтрак на Мальдивах, состоящий из тунца, лука, кокоса и чили. Все ингредиенты хорошо измельчают и перемешивают. Это блюдо обычно едят со свежеиспеченными лепешками чапати.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Обед </h2>
+					<p>Еда в отелях обычно европейская или мальдивская, с обилием рыбных блюд и явным влиянием индийской и ланкийской кухни. Элитные курорты предлагают суши, десерты и любые традиционные блюда разных народов мира.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Блюда из омаров</h2>
+					<p>Блюда из омаров и лобстеров очень вкусны, и если Вы решили его попробовать в домашних условиях, то придется потратиться, так как оно не из самых дешевых. Но зато он украсит любой стол и придаст ему изысканность. Рассчитываете, что на одного человека приходится один омар (лобстер). Его не сложно готовить и зачастую используют в виде дополнения к закуске, это гораздо экономичнее, но все так же вкусно!</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+	
+	
+		<div class="row footer">
+			<div class="col" id="int-places">
+				<h3>Интересные места</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Остров Мараду</h2>
+					<p>Помимо необычайной живописности местных пейзажей здесь можно осмотреть остатки военно-морских баз Великобритании. Еще одна достопримечательность — «Бондоге» или «Большой дом», который ранее был английской тюрьмой.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Мале Хукукру Мискиу</h2>
+					<p>Пятничная мечеть в центре Мале которая имеет периметр около 60 метров. Воздвигнута в 1658 году из кораллового камня по приказу султана Исканадара I. Вокруг нее расположено кладбище XVII века с коралловыми надгробиями.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Президентский дворец Мулиаге</h2>
+					<p>Возведенное в Мале в 1906 году здание в колониальном стиле. Постройка началась по приказу султана Мухаммеда Шамсуддина III для его сына. Но после переворота 1936 года здание отошло в государственную собственность.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+		</div>	
+		<div class="container-fluid last">
+			<div class="row">
+		<div class="col">
+			<a href="../../main.html"><img src="logo1.svg" alt="" id="last-img"></a>
+			<span><a href="" data-toggle="modal" data-target="#Modal-bron">Заказать билет</a></span>
+		</div>
+	</div>
+		</div>
+	
+	
+	
+<script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

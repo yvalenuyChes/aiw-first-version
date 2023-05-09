@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<script src="../../jquery-3.4.1.js"></script>
+	<link rel="shortcut icon" href="../../logo1.ico" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Нью-Йорк</title>
+</head>
+<body>
+	<div class="scene">
+		<div class="layer layer-bg" data-speed="10"></div>
+		<div class="layer layer-1"  data-speed="40"></div>
+		<div class="layer layer-2"  data-speed="80"></div>
+	</div>	
+	<div class="modal fade" id="Modal-bron" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+      	<h3>Бронирование</h3>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col ">
+      			<div class="inputBox">
+				<!-- <label class="labelText">Выбор транспорта</label> -->
+				<select size="1" name="" id="select">
+					 <option disabled>Выбор транспорта</option>
+					<option value="Самолет">Самолет</option>
+					<option value="Поезд">Поезд</option>
+					<option value="Пароход">Пароход</option>
+				</select>
+			</div>
+      		</div>
+      		<div class="col1">
+				<div class="inputBox">
+				<label class="labelText">Откуда</label>
+				<input class="input userInput" type="text" required>
+				</div>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Отбытие</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Возвращение</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько взрослых(18+)</label>
+				<input  class="input userInput" type="number" required>
+				</div>
+					
+				</div>
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько детей(0-17)</label>
+				<input class="input userInput" type="number">
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button data-dismiss="modal"  type="button" class="btn btn-primary btn-bron" data-toggle="modal" data-target="#exampleModalCenter">Подтвердить</button>
+				</div>
+			</div>
+      </div>
+  </div>
+</div>
+	</div>
+			<section class="container-fluid">
+	
+		<div class="row header">
+			<div class="col">
+				<h4>Нью-Йорк</h4>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col" id="food">
+				<h3>Еда</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(kuh/1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Бургеры</h2>
+					<p>Бургер — одно из наиболее популярных блюд фастфуда во всём мире. Традиционно эта разновидность сэндвича состоит из аккуратно сложенных между двух булочек ингредиентов: котлеты, листа салата, дольки помидора и ломтика сыра.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Хот-дог</h2>
+					<p>Пшеничная булка с сосиской или колбаской, приправленной кетчупом, майонезом, горчицей и иногда овощами (свежими, маринованными или жареными), зеленью, сыром или беконом.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Пицца</h2>
+					<p>Итальянское национальное блюдо в виде круглой открытой дрожжевой лепёшки, покрытой в классическом варианте томатным соусом и расплавленным сыром.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+	
+	
+		<div class="row footer">
+			<div class="col" id="int-places">
+				<h3>Интересные места</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Статуя свободы</h2>
+					<p>Конечно, это главный символ не только Нью-Йорка, но и всей Америки. Чтобы попасть внутрь, вам нужно подплыть на пароме.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Empire State Building</h2>
+					<p>Вы наверняка видели этот небоскреб в американских фильмах. Строительство его началось еще в 1929 году, и с тех пор здание считается одной из самых узнаваемых достопримечательностей Нью-Йорка и «сердцем» города. Для посещения открыты две обзорные площадки, взобравшись на которые, вы увидите весь Нью-Йорк у ваших ног.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Центр Рокфеллера</h2>
+					<p>Сходить на обзорную площадку этого небоскреба стоит приходить на закате дня, именно в это время отсюда открывается вид на упомянутый Эмпайр-стейт-билдинг и весь Нью-Йорк, утопающий в угасающих солнечных лучах. На площадке установлены удобные городские бинокли.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>	
+		</div>
+		<div class="container-fluid last">
+			<div class="row">
+		<div class="col">
+			<a href="../../main.html"><img src="logo1.svg" alt="" id="last-img"></a>
+			<span><a href="" data-toggle="modal" data-target="#Modal-bron">Заказать билет</a></span>
+		</div>
+	</div>
+		</div>
+	
+	
+	
+  <script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>

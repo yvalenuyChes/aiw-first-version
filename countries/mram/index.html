@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script src="../../jquery-3.4.1.js"></script>
+	<link rel="shortcut icon" href="../../logo1.ico" type="image/x-icon">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../../bootstrap-4.4.1-dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<title>Мраморный каньон</title>
+</head>
+<body>
+	<div class="scene">
+		<div class="layer layer-bg" data-speed="10"></div>
+		<div class="layer layer-1"  data-speed="40"></div>
+		<div class="layer layer-2"  data-speed="80"></div>
+	</div>	
+	<div class="modal fade" id="Modal-bron" tabindex="-1" role="dialog"  aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+		<div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+      	<h3>Бронирование</h3>
+      	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col ">
+      			<div class="inputBox">
+				<!-- <label class="labelText">Выбор транспорта</label> -->
+				<select size="1" name="" id="select">
+					 <option disabled>Выбор транспорта</option>
+					<option value="Самолет">Самолет</option>
+					<option value="Поезд">Поезд</option>
+					<option value="Пароход">Пароход</option>
+				</select>
+			</div>
+      		</div>
+      		<div class="col1">
+				<div class="inputBox">
+				<label class="labelText">Откуда</label>
+				<input class="input userInput" type="text" required>
+				</div>
+			</div>
+      	</div>
+		<div class="row">
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Отбытие</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+			<div class="col">
+				<div class="inputBox">
+				<label class="">Возвращение</label>
+				<input class="input userInput date" type="date" required>
+				</div>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько взрослых(18+)</label>
+				<input  class="input userInput" type="number" required>
+				</div>
+					
+				</div>
+				<div class="col">
+					<div class="inputBox">
+				<label class="labelText">Сколько детей(0-17)</label>
+				<input class="input userInput" type="number">
+				</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col">
+					<div class="inputBox">
+						<label class="labelText">Введите ваш e-mail</label>
+						<input class="input userInput" type="email" required>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button data-dismiss="modal"  type="button" class="btn btn-primary btn-bron" data-toggle="modal" data-target="#exampleModalCenter">Подтвердить</button>
+				</div>
+			</div>
+      </div>
+  </div>
+</div>
+	</div>
+			<section class="container-fluid">
+		
+		<div class="row header">
+			<div class="col">
+				<h4>Мраморный каньон</h4>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col" id="food">
+				<h3>Еда</h3>
+			<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(kuh/1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Борщ</h2>
+					<p>Борщ - традиционное восточнославянское блюдо, которое готовится со свеклой, что придаёт ему характерный насыщенный цвет. В отличие от обычных супов он густой. Борщ считается национальным украинским первым блюдом, хотя он имеет место в кулинарном фонде России</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Картошка с котлетами</h2>
+					<p>Очень вкусное блюдо, сочетающее в себе любимую картошку с котлетами. Но мясные шарики из фарша с мелким булгуром и тушеной картошкой становятся не такими обычными как мы привыкли их готовить.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(kuh/3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Блины с красной икрой</h2>
+					<p>Блины-важнейший атрибут во время празднества масленицы!</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>
+
+	
+		<div class="row footer">
+			<div class="col" id="int-places">
+				<h3>Интересные места</h3>
+				<div class="wrapper">
+		<section class="content-img">
+			<div class="img-box" style="background-image: url(1.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Весельные лодки</h2>
+					<p>Весельные лодки подойдут для любителей спокойного отдыха. Их можно взять в прокат за сравнительно небольшие деньги и почувствовать себя средиземноморским пиратом, путешествующим по гротам в поисках сокровищ.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(2.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Рускеальский провал</h2>
+					<p>Любители скалолазания могут договориться о спуске в знаменитый Рускеальский провал. Местные жители говорят, что провал образовался в годы войны из-за сильного взрыва.</p>
+				</div>
+			</div>
+			<div class="img-box" style="background-image: url(3.png)">
+				<span class="bor-left-rig"></span>
+				<span class="bor-top-bot"></span>
+				<div class="container-box">
+					<h2>Ледовый каток и ледяные скульптуры</h2>
+					<p>В темное время каньон и гроты подсвечиваются, и выглядят просто фантастически. Только чтобы взглянуть на эту красоту, сюда уже стоит приехать. С каждым годом возможности отдыха и летом и зимой расширяются, поэтому для тех, кто был в парке "Рускеала" несколько лет назад, это место покажется совершенно новым и подарит свежие ощущения.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+			</div>
+		</div>	
+		</div>
+		<div class="container-fluid last">
+			<div class="row">
+		<div class="col">
+			<a href="../../main.html"><img src="logo1.svg" alt="" id="last-img"></a>
+			<span><a href="" data-toggle="modal" data-target="#Modal-bron">Заказать билет</a></span>
+		</div>
+	</div>
+		</div>
+	
+	
+	
+ 	<script src="../../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
